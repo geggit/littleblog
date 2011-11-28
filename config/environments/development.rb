@@ -1,5 +1,5 @@
 Imblogu::Application.configure do
-  # Settings specified here will take precedence over those in config/application.rb
+  # Settings specified here will take precedence over those in config/environment.rb
 
   # In the development environment your application's code is reloaded on
   # every request.  This slows down response time but is perfect for development
@@ -14,13 +14,19 @@ Imblogu::Application.configure do
   config.action_view.debug_rjs             = true
   config.action_controller.perform_caching = false
 
-  # Don't care if the mailer can't send
-  config.action_mailer.raise_delivery_errors = false
+  # Email configuration
+  config.action_mailer.raise_delivery_errors = true
+
+  # Gmail SMTP server setup
+  ActionMailer::Base.smtp_settings = {
+    :address => "smtp.gmail.com",
+    :enable_starttls_auto => true,
+    :port => 587,
+    :authentication => :plain,
+    :user_name => "example@gmail.com",
+    :password => 'changeit'
+  }  
 
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log
-
-  # Only use best-standards-support built into browsers
-  config.action_dispatch.best_standards_support = :builtin
 end
-
