@@ -1,5 +1,5 @@
 <%= div_for comment do %>
-  <h3>
+  <h3 id="comments">
     <%= comment.name %> &lt;<%= comment.email %>&gt; said:    
     <% if @article.owned_by? current_user %>
       <span class='actions'>

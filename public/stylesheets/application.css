@@ -2,8 +2,8 @@
   margin: 0 auto;
 }
 
-body { 
-  background-color: BlanchedAlmond; 
+body {
+  background-color: #fff;
   color: #333;
 }
 
@@ -24,7 +24,7 @@ p {
 }
 
 a {
-  color:#D95E16;
+  color:limegreen;
   padding:0 2px;
   text-decoration:none;
 }
@@ -44,7 +44,7 @@ a:hover {
 #header {
   font-family:"Myriad Web Pro",Helvetica,Arial,sans-serif;
   letter-spacing: 1px;
-  border-bottom: 5px solid #333333;
+  border-bottom: 5px solid yellow;
   color:#333333;
   padding: 15px 0;
   height: 35px;
@@ -68,10 +68,17 @@ a:hover {
   padding-top: 14px;
   float: left;
   font-size: 30px;
+          transform: rotate(-25deg);
+          -ms-transform: rotate(-25deg); /* IE 9 */
+          -webkit-transform: rotate(-25deg); /* Safari and Chrome */
+          -o-transform: rotate(-25deg); /* Opera */
+          -moz-transform: rotate(-25deg); /* Firefox */
+  position:relative;
+  left: 200px;
 }
 
 #header h1 a{
-  color: black;
+  color: limegreen;
 }
 
 #header h1 a:hover {
@@ -87,7 +94,7 @@ a:hover {
 #main h1 {
   font-size: 16px;
   padding: 10px 0;
-  border-bottom: 1px solid #bbb;
+  border-bottom: 1px solid #ccc;
   margin-bottom: 10px;
 }
 
@@ -124,7 +131,7 @@ a:hover {
   padding-right: 10px;
   line-height: 21px;
   vertical-align: center;
-  background-color: #FFF;  
+  background-color: #FFF;
   border: none;
 }
 
@@ -161,6 +168,16 @@ a:hover {
   padding-top: 10px;
   height: 20px;
 }
+
+
+
+#comments {
+  font-size: 11px;
+  position:relative;
+  left: 35px;
+}
+
+
 
 #main h3 .actions{
   display:none;
