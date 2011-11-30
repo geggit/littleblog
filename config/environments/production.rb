@@ -72,8 +72,8 @@ Imblogu::Application.configure do
     :enable_starttls_auto => true,
     :port => 587,
     :authentication => :plain,
-    :user_name => "ukoreh@gmail.com",
-    :password => '2ukorehukoreH'
+    :user_name => "somebody@example.com",
+    :password => 'changeit'
   }
 
 

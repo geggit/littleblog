@@ -23,8 +23,8 @@ Imblogu::Application.configure do
     :enable_starttls_auto => true,
     :port => 587,
     :authentication => :plain,
-    :user_name => "duajegjuhen@gmail.com",
-    :password => 'gabimegjuhesorE9'
+    :user_name => "somebody@example.com",
+    :password => 'changeit'
   }
 
   # Print deprecation notices to the Rails logger
