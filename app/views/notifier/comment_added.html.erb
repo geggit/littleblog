@@ -2,7 +2,7 @@
 <body>
   <p>
     Someone added a comment to one of your articles <i><%= @article.title %></i>.
-    Go read the comment: <%= link_to @article.title, article_url(@article, :host => 'localhost:3000') %>.
+    Go read the comment: <%= link_to @article.title, article_url(@article, :host => 'http://littleblog.heroku.com') %>.
   </p>
 </body>
 </html>
