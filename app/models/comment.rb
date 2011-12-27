@@ -6,5 +6,5 @@ class Comment < ActiveRecord::Base
 
   def article_should_be_published
     errors.add(:article_id, I18n.t('comments.errors.not_published_yet')) if article && !article.published?
-  end  
+  end
 end
